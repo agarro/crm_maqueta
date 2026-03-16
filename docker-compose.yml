@@ -1,0 +1,58 @@
+version: '3.8'
+services:
+  gateway:
+    build: ./gateway
+    ports:
+      - "8080:8080"
+  crm-auth-service:
+    build: ./services/crm-auth-service
+    ports:
+      - "3003:3003"
+  crm-billing-service:
+    build: ./services/crm-billing-service
+    ports:
+      - "3002:3002"
+  crm-ai-service:
+    build: ./services/crm-ai-service
+    ports:
+      - "3005:3005"
+  crm-notifications:
+    build: ./services/crm-notifications
+    ports:
+      - "3004:3004"
+  crm-leads:
+    build: ./services/crm-leads
+    ports:
+      - "3009:3009"
+  crm-contacts:
+    build: ./services/crm-contacts
+    ports:
+      - "3006:3006"
+  crm-companies:
+    build: ./services/crm-companies
+    ports:
+      - "3007:3007"
+  crm-deals:
+    build: ./services/crm-deals
+    ports:
+      - "3008:3008"
+  crm-tasks:
+    build: ./services/crm-tasks
+    ports:
+      - "3010:3010"
+  crm-products:
+    build: ./services/crm-products
+    ports:
+      - "3011:3011"
+  crm-analytics:
+    build: ./services/crm-analytics
+    ports:
+      - "3012:3012"
+  crm-settings:
+    build: ./services/crm-settings
+    ports:
+      - "3013:3013"
+  crm-support-service:
+    build: ./services/crm-support-service
+    ports:
+      - "3014:3014"
