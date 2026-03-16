@@ -1,0 +1,10 @@
+{
+  "name": "crm-auth-service",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^11.10.1",
+    "zod": "^3.22.4"
+  }
+}
